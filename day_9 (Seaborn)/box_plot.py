@@ -1,10 +1,10 @@
 import matplotlib.pylab as plt
 import seaborn as sns
 
-
-# Show average tip by day
-tips = sns.load_dataset("tips")
-sns.barplot(data=tips,
-           x="day", y="tip")
+# Penguin flippers by species
+penguins = sns.load_dataset("penguins")
+sns.boxplot(data=penguins,
+           x="species",
+           y="flipper_length_mm")
 sns.set_theme()
 plt.show()
